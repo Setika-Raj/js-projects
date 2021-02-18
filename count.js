@@ -1,5 +1,13 @@
+var typed = new Typed('#typed',{
+  strings: [' Beginnings...',' Journey...',' Goals...'],
+      typeSpeed: 120,
+      startDelay: 10,
+      loop: true,
+    });
 
-function countdown(){
+
+
+  function countdown(){
   const currentDate=new Date();
   const newDate=new Date('1/1/2022');
   const time_diff=newDate.getTime()-currentDate.getTime();
