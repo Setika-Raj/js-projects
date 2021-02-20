@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@500&display=swap');
+*{box-sizing:border-box;}
+body{
+  font-family: 'Kanit', sans-serif;
+font-family: 'Poppins', sans-serif;
+  margin:0;
+background-image:linear-gradient(120deg,#e2c35d,#d88771);
+min-height:100vh;
+color:white;}
+
+.new{color:black;}
+
+.test{color:green;}
+header{font-size:2rem;
+}
+header ,form{
+  min-height:20vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-left:3rem;
+}
+form input{
+  width:27rem;
+}
+form button{
+  color:#d88771;
+  cursor:pointer;
+  transition:all 0.3s ease;
+
+
+}
+form button:hover{
+  color:white;
+  cursor:pointer;
+background-color:#d88771;
+border:none;
+
+}
+form input,form button{
+  font-size:1.4rem;
+  border:none;
+  background-color:white;
+  padding:0.6rem;
+}
+.todo-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+margin:3rem 0 1rem 0;
+  padding:0.6rem;
+}
+
+
+.todo-list{
+  list-style:none;
+  min-width:30%;
+}
+.todo-div{
+  background-color:white;
+  color:black;
+  font-size:1.6rem;
+  display:flex;
+justify-content:space-between;
+margin:0.4rem;
+align-items:center;
+}
+.todo-li{
+  flex:1;
+}
+.check-btn,.delete-btn{
+  border:none;
+  font-size:1rem;
+  cursor:pointer;
+  transition:all 0.6s ease;
+  background-color: #ff6f47;
+  color:white;
+  height:2rem;
+
+}
+.check-btn{
+  background-color: #01C200;
+
+}
+.todo-li{
+
+}
+.fa-check,.fa-trash{
+  pointer-events: none;
+}
+.complete{
+  text-decoration: line-through;
+  opacity:0.5;
+}
+.option-choice{display:none;}
+.remove{
+  transform:translateY(8rem) rotateZ(20deg);
+
+  opacity:0.1;
+}
+.filter{
+  display:flex;
+  color:#d88771;
+  border:none;
+  margin:4rem;
+  font-size:2rem;
+  display:flex;
+
+}
