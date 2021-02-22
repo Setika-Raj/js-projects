@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Background-flipper</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+
+
+      body{font-family: 'Montserrat', sans-serif;
+background-color:lightblue;
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        display:flex;
+        flex-direction:column;
+      align-items:center;
+
+  height:100vh;}
+  
+  .color{
+margin-top:16rem;
+  }
+
+  input{
+
+    border:none;
+    outline:none;
+    padding:2rem 3rem;
+    font-size:1.2rem;
+    border-radius:10px;}
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Background Color-flipper</h1>
+    <div class="color">
+      <form>
+        <input type="text" id="color-input" placeholder="Enter color value">
+
+        </form>
+      </div>
+
+<script>
+
+
+$("input").keypress((e)=>{
+if(e.keyCode===13){
+
+    e.preventDefault();
+    let color=document.getElementById("color-input").value;
+    document.body.style.backgroundColor=color;
+
+
+}
+});
+
+
+</script>
+  </body>
+</html>
